@@ -1,0 +1,1014 @@
+\documentstyle[fancyheadings,11pt] {article}
+%\documentclass[fancyheadings,11pt] {article}
+
+\newcommand {\workingPapers}[1]{#1}  % SHOW WORKING PAPERS
+%\newcommand {\workingPapers}[1]{  }  % HIDE WORKING PAPERS
+
+%\newcommand {\submittedGrants}[1]{#1}  % SHOW SUBMITTED GRANTS
+\newcommand {\submittedGrants}[1]{  }  % HIDE SUBMITTED GRANTS
+
+\newcommand {\grantAmount}[1]{#1}  % SHOW AMOUNTS FOR EACH GRANT
+%\newcommand {\grantAmount}[1]{  }  % HIDE AMOUNTS FOR EACH GRANT
+
+%\newcommand\student\underline
+\newcommand\student{}
+\newcommand\mystudent{}
+\input{papers}
+\newcommand\formal[1]{}
+% cp ~/ed/cv.pdf ~/LSA-Files/Public/html
+\newcommand\volume{}
+\newcommand\separator{:}
+
+%\usepackage{verbatim}
+%\documentclass[fancyheadings,12pt] {article}
+\oddsidemargin 0in
+\evensidemargin 0in
+\topmargin -0.3in
+\textheight 9.3in
+\textwidth 6.5in
+\pagestyle{fancy}
+\lhead{}
+\chead{}
+\rhead{\bf {Edward L. Ionides}}
+\lfoot{}
+\cfoot {\thepage}
+\rfoot{}
+\parindent 0in  % Left justify
+%\parskip 1.8ex
+\raggedbottom
+
+\newcommand {\myheader}[1]{{\bf {#1}}}
+\newenvironment {mylist}[1]
+                {\myheader{#1}
+                 %\begin{list} {$\bullet$ \hfill}
+                 \begin{list}{}
+                 {\setlength{\labelwidth}{0mm}
+                  %\setlength{\leftmargin}{0mm}
+                  \setlength{\leftmargin}{3mm}
+                  \setlength{\itemindent}{0em}
+                  \setlength{\labelsep}{1.5mm}
+                  \setlength{\parsep}{0.1 ex}
+%                  \setlength{\itemsep}{0.25 cm}
+%                  \setlength{\itemsep}{0.23 cm}
+                  \setlength{\itemsep}{0.1cm}
+      \setlength{\topsep}{0.15cm}}} %space between title and 1st item
+   {\end{list}}
+
+\newenvironment {reflist}[1]
+                {\myheader{#1}
+                 \begin{list}{}
+                 {\setlength{\labelwidth}{0mm}
+                  %\setlength{\leftmargin}{0em}
+                  \setlength{\leftmargin}{6mm}
+                  \setlength{\itemindent}{-3mm}
+                  \setlength{\labelsep}{0mm}
+                  \setlength{\parsep}{0.1 ex}
+%                  \setlength{\itemsep}{0.25 cm}
+%                  \setlength{\itemsep}{0.23 cm}
+                  \setlength{\itemsep}{0.1cm}
+      \setlength{\topsep}{0.15cm}}} %space between title and 1st item
+   {\end{list}}
+
+\renewcommand{\labelitemi}{\bf --}
+\newcommand{\lsp}{\vspace{0.2cm}}
+\newcommand{\isp}{\vspace{0.0cm}}
+
+\begin{document}
+\thispagestyle{empty}  % No number or header on 1st page
+
+
+\rule{0mm}{1mm}
+\vspace{-20mm}
+
+%\hfill{\small \today} 
+
+\vspace{1mm}
+
+%\begin{center}
+%\hfill 
+\rule{0mm}{1mm}\hspace{5cm}{\large {\bf EDWARD L. IONIDES }}
+%\hfill 
+%\end{center}
+%\vspace{1mm}
+
+%\vspace{1mm}
+
+\begin{tabbing}
+University of Michiganxxxxxxxxxxxxxxxxxxxxxxxxxx\= \kill
+Department of Statistics \>  % phone: (734) 615-3332
+{http://dept.stat.lsa.umich.edu/\~{}ionides}
+\\
+University of Michigan\> % fax: (734) 763-4676
+email: {ionides@umich.edu}
+\\
+453 West Hall    \>  \\
+Ann Arbor MI 48109-1107 \> 
+\end{tabbing}
+\vspace{0.1cm}
+\begin{mylist}{RESEARCH INTERESTS}
+%\item{--}
+\item{} 
+Time series analysis with applications to public health and the biological sciences. Methodology for inference on partially observed stochastic dynamic systems. 
+\end{mylist}
+
+\vspace{0.2cm}
+\begin{mylist}{EDUCATION}
+\item{\bf 1995-2001 }
+{Ph.D. in Statistics} from University of California, Berkeley.
+
+\item{\bf 1994-1995 }
+{Master of Mathematics (passed with distinction)} from Cambridge University. 
+
+\item{\bf 1991-1994 }
+{B.A.  in Mathematics (first class)} from Cambridge
+  University.
+
+\end{mylist}
+
+\lsp
+\begin{mylist}{EMPLOYMENT AND PROFESSIONAL EXPERIENCE}
+\item{\bf 2014-present }
+Professor, Department of Statistics, University of
+Michigan.
+\item{\bf 2009-2014 }
+{Associate Professor}, Department of Statistics, University of
+Michigan.
+\item{\bf 2002-2009 }
+{Assistant Professor}, Department of Statistics, University of
+Michigan.
+
+\isp
+\item{\bf 2001-2002 } {Visiting Assistant Professor}, Department of
+Statistics, University of Chicago. 
+
+\isp
+
+
+\end{mylist}
+
+
+\lsp
+
+%\newpage
+\workingPapers{
+
+\lsp
+
+\begin{reflist}{WORKING PAPERS}
+
+\item Asfaw, K., Park, J., Ho, A., King, A. A., and Ionides, E. L. (2021). Partially observed Markov processes with spatial structure via the R package spatPomp. {\it arxiv:2101.01157v2}.
+  
+\item  King, A. A., Lin, Q., and Ionides, E. L. (2021). Markov genealogy processes. {\it arxiv:2105.12730}.
+
+
+\item  King, A. A., Lin, Q., and Ionides, E. L. (2020). The sampled Moran genealogy process. {\it arxiv:2002.11184}.
+
+
+  %{\it medRxiv:2020.05.02.20074104}
+% \url{https://doi.org/10.1101/2020.05.02.20074104}
+  
+%Kraay, A. N. M., Ionides, E. L., Lee, G. O., Cevallos, W. and Eisenberg, J. N. (2018). Direct, indirect, and overall effectiveness of Rotarix vaccination in rural Ecuador, 2008-2013. In review.
+
+%\item Tapia Granados, J. A. and Ionides, E. L. (2012). Are income and health cointegrated? Life expectancy, mortality, and economic growth in Australia, 1920-2000. 
+
+%\item Tapia Granados, J. A.,  and Ionides, E. L. (2016). Population health in expansion and recession: Europe since 2000. Revised for {\em Health Economics}.
+
+\end{reflist}
+
+}              % END WORKING PAPERS
+
+\begin{reflist}{PEER-REVIEWED PUBLICATIONS}
+
+% \item[]{\small Underlined authors are those for whom a substantial amount of their work on this paper was carried out as a student, either graduate or postdoctoral.} 
+%Students whose PhD committee I chaired are identified by boldface.}
+
+\item  Ionides, E. L., Asfaw, K., Park, J., and King, A. A. (2021). Bagged filters for partially observed spatiotemporal systems. {\em Journal of the American Statistical Association, prepublished online}. 
+
+\item Ning, N., Ionides, E. L., and Ritov, Y. (2021). Scalable Monte Carlo inference and rescaled local asymptotic normality. {\em Bernoulli}, {\volume 27}{\separator}2532-2555.
+  
+  \item Park, J., and Ionides, E. L. (2020). Inference on high-dimensional implicit dynamic models using a guided intermediate resampling filter. {\em Statistics and Computing}, {\volume 30}{\separator}1497–-1522.
+%{\it arxiv:1708.08543v4}.
+
+\item Subramanian, R., Romeo Aznar, V., Ionides, E., Code{\c c}o, C., and Pascual, M. (2020). Predicting re-emergence times of dengue epidemics at low reproductive numbers: DENV1 in Rio de Janeiro, 1986-1990. {\em Journal of the Royal Society Interface}, {\volume 17}{\separator}20200273. 
+
+\item Kraay, A. N. M., Man, O., Levy, M. C., Levy, K., Ionides, E., Eisenberg, J. N. S. (2020). Understanding the impact of rainfall on diarrhea: Testing the concentration-dilution hypothesis using a systematic review and meta-analysis. {\em Environmental Health Perspectives}, {\volume 128}{\separator}126001.
+  
+\item Kraay, A. N. M., Ionides, E. L., Lee, G. O., Cevallos Trujillo, W. F., and Eisenberg, J. N. S. (2020). Effect of childhood rotavirus vaccination on community rotavirus prevalence in rural Ecuador, 2008-2013. {\em International Journal of Epidemiology}, pre-published online.
+  
+\item NeCamp, T., Sen, S., Frank, E., Walton, M. A., Ionides, E. L., Fang, Y., Tewari, A. and Wu, Z. (2020). Assessing real-time moderation for developing adaptive mobile health interventions for medical interns: Micro-randomized trial.
+  {\it Journal of Medical Internet Research} {\volume 22}{\separator}e15033.
+  
+\item Breto, C., Ionides, E. L., and King, A. A. (2019). Panel data analysis via mechanistic models. {\it Journal of the Americal Statistical Association}, {\volume 115}{\separator}1178-1188.
+
+\item Marino, J., S. Peacor, D. Bunnell, H. Vanderploeg, S. Pothoven, A. Elgin, J. Bence, J. Jiao and E. L. Ionides. (2019). Evaluating consumptive and nonconsumptive predator effects on prey density using field times series data. {\it Ecology}, {\volume 100}{\separator}e02583.
+
+\item Tapia Granados, J.A., Christine, P.J., Ionides, E.L., Carnethon, M.R., Diez Roux, A.V., Kiefe, C.I. and Schreiner, P.J., (2018). Cardiovascular risk factors, depression, and alcohol consumption during joblessness and during recessions in CARDIA young adults. 
+  {\it American Journal of Epidemiology}, {\volume 187}{\separator}2339--2345.
+
+\item Ionides, E. L., Breto, C., Park, J., Smith, R. A. and King, A. A. (2017). Monte Carlo profile confidence intervals for dynamic systems. {\it Journal of the Royal Society Interface} {\volume 14}{\separator}1--10.
+
+\item Smith, R. A., Ionides, E. L. and King, A. A. (2017). Infectious disease dynamics inferred from genetic data via sequential Monte Carlo. {\it Molecular Biology and Evolution} {\volume 34}{\separator}2065--2084.
+
+\item Koopman, J. S., Henry, C. J., Park, J. H., Eisenberg, M. C., Ionides, E. L., and Eisenberg, J. N. (2017). Dynamics affecting the risk of silent circulation when oral polio vaccination is stopped. {\it Epidemics} {\volume 20}{\separator}21--36. 
+
+\item Tapia Granados, J. A. and Ionides, E. L. (2017). Population health in expansion and recession: Mortality and the Great Recession in Europe. {\it Health Economics}. {\volume 26}{\separator}e219–-e235.
+
+\item Ionides, E. L., Giessing, A., Ritov, Y., and Page, S. E. (2017).
+Response to the ASA's statement on p-values: Context, process, and purpose. {\em The American Statistician} {\volume 71}{\separator}88--89.
+
+\item Nguyen, D., and Ionides, E. L. (2016). A second-order iterated smoothing algorithm. {\em Statistics and Computing} {\volume 27}{\separator}1677–-1692.
+
+\item King, A. A., Nguyen, D. and Ionides, E. L. (2016). Statistical inference for partially observed Markov processes via the R package {\texttt pomp}. {\em Journal of Statistical Software} {\volume 69}{\separator}1--43.
+
+\item  Tapia Granados, J. A.,  and Ionides, E. L. (2016). Statistical evidence shows that mortality tends to fall during recessions: A rebuttal to Catalano and Bruckner. {\em International Journal of Epidemiology} {\volume 45}{\separator}1683--1686.
+
+\item Ehsani, J. P.,  Ionides, E. L., Klauer, S. G., Perlus,  J. G., and Gee, B. (2016). The Effectiveness of Cell Phone Restrictions for Young Drivers: A Review of the Evidence. {\em Transportation Research Record: Journal of the Transportation Research Board} {\volume 2602}{\separator}35–42
+
+\item
+Bhadra, A. and Ionides, E. L. (2016). Adaptive particle allocation in iterated sequential Monte Carlo via approximating meta-models. {\em Statistics and Computing} {\volume 26}{\separator}393--407.
+
+\item Ionides, E. L., Nguyen, D., Atchade, Y., Stoev, S. and King, A. A. (2015). Inference for dynamic and latent variable models via iterated, perturbed Bayes maps.  {\em Proceedings of the National Academy of Sciences of the USA} {\volume 112}{\separator}719--724.
+
+\item Romero-Severson, E. 0, Petrie, C. L., Ionides, E. L., Albert, J. and Leitner, T. (2015) Trends of HIV-1 incidence with credible intervals in Sweden 2002-2009 reconstructed using a dynamic model of within-patient IgG growth. {\em International Journal of Epidemiology} {\volume 44}{\separator}998--1006.
+
+
+\item Romero-Severson, E. O., Volz, E., Koopman, J. S., Leitner, T. and Ionides, E. L. (2015). Dynamic variation in sexual contact rates for a cohort of HIV-negative urban gay men. {\em American Journal of Epidemiology}  {\volume 182} 255--262.
+
+\item
+Katus, R. M., Liemohn,  M. W.,  Ionides, E. L., Ilie, R. Welling, D. and Sarno-Smith, L. K. (2015). Statistical analysis of the geomagnetic response to different solar wind drivers and the dependence on storm intensity. {\em Journal of Geophysical Research: Space Physics} {\volume 120}{\separator}310–-327. 
+
+
+\item
+Larson, P. S., Minakawa,  N., Dida,  G. O., Njenga,  S. M., Ionides,  E. L. and Wilson,  M. L. (2014)
+Insecticide-treated net use before and after mass distribution in a fishing community along Lake Victoria, Kenya: Successes and unavoidable pitfalls.
+{\em Malaria Journal} {\volume 13}{\separator}466. 
+
+\item\formal{[[\tapiaPNAS] ]} 
+Tapia Granados, J. A.,  House, J. S., Ionides, E. L., Burgard, S. and Schoeni, R. S. (2014). Individual joblessness, contextual unemployment, and mortality risk. {\em American Journal of Epidemiology}  {\volume 180}{\separator}280-287.
+
+\item\formal{[[\ehsani] ]} 
+Ehsani, J. P, Bingham, C. R., Ionides, E. L. and Childers, D. (2014). The short-term impact of Michigan's text messaging restriction on motor vehicle crashes. {\it Journal of Adolescent Health}  {\volume 54}{\separator}S68-S74.
+
+\item\formal{[[\volz] ] }
+Volz, E. M., Ionides, E. L., \student{Romero Severson, E.}, Brandt, M., Mokotoff, E., and Koopman, J. S. (2013). HIV-1 transmission during early infection in men who have sex with men: A phylodynamic analysis.
+{\em PLoS Medicine} {\volume 10}{\separator}e1001568.
+
+\item\formal{[[\ionidesAOAS] ] }
+Ionides, E. L., \student{\mystudent Wang, Z.} and Tapia Granados, J. A. 
+(2013). 
+Macroeconomic effects on mortality revealed by panel analysis with nonlinear trends. {\em Annals of Applied Statistics} {\volume 7}{\separator}1362–1385.
+
+\item\formal{[[\mayerAJE] ] }
+\student{Mayer, B. T.}, Koopman, J. S., \student{Henry, C. J.}, Gomes, G. M., Ionides, E. L. and Eisenberg, J. N. (2013). Successes and shortcomings of polio eradication:  A transmission modeling analysis. {\em American Journal of Epidemiology} {\volume 177}{\separator}1236-1245. 
+
+\item\formal{[[\royPLOSNTD] ] }
+Roy, M., Bouma, M. J., Ionides, E. L., Dhiman, R. C., and Pascual, M. 
+(2013). Relapse treatment and the transmission dynamics of Plasmodium vivax malaria in NW India. {\em PLoS Neglected Tropical Diseases} {\volume 7}{\separator}e1979.
+
+\item\formal{[[\tapiaESP] ] }
+Tapia Granados, J. A., Ionides, E. L.  and Carpintero, O. (2012). Climate change and the world economy: Short-run determinants of atmospheric $\mathrm{CO}_2$. {\em Environmental Science and Policy} {\volume 21}{\separator}50-62.
+
+\item\formal{[[\chuangJME] ] }
+\student{Chuang, T.}, Ionides, E. L., Knepper, R. G., Stanuszek, W. W., Walker, E. D. and Wilson, M. L. (2012).
+Cross-correlation map analyses show weather variation influences on mosquito abundance patterns in Saginaw county, Michigan, 1989-2005. {\em Journal of Medical Entomology} {\volume 49}{\separator}851-858.
+
+\item\formal{[[\ionidesJASA] ]}
+Ionides, E. L. (2012). Comment: Cell motility models and inference for dynamic systems. {\em Journal of the American Statistical Association} {\volume 107}{\separator}865-868.
+
+\item\formal{[[\lindstromIFAC] ]} 
+Lindstr\"{o}m, E., Ionides, E. L., Frydendall, J., and Madsen, H. (2012). Efficient iterated filtering. 
+{\em System Identification} {\volume 16}{\separator}1785-1790.
+%{\em 16th IFAC Symposium on System Identification (SYSID 2012)}.
+
+\item\formal{[[\bretoSPA] ]}
+ \student{\mystudent Bret\'{o}, C.}, and Ionides, E. L. (2011). Compound Markov counting processes and their applications to modeling infinitesimally over-dispersed systems. {\em Stochastic Proccesses and Their Applications} {\volume 121}{\separator}2571--2591.
+
+\item\formal{[[\ionidesAOS] ]}
+ Ionides, E. L., \student{\mystudent Bhadra, A.}, Atchad\'{e}, Y., and King, A. A. (2011). Iterated filtering. {\em Annals of Statistics} {\volume 39}{\separator}1776--1802.
+
+\item\formal{[[\bhadraJASA] ]} \student{\mystudent Bhadra, A.}, Ionides, E. L., \student{Laneri, K.}, Pascual, M., Bouma, M. and Dhiman, R. C. (2011).
+Malaria in Northwest India: Data analysis via partially observed stochastic differential equation models driven by L\'{e}vy noise. {\em Journal of the American Statistical Association} {\volume 106}{\separator}440--451.
+
+\item\formal{[[\ionidesSTATSCI] ]} Ionides, E. L. (2011) Discussion on ``Feature Matching in Time Series Modeling'' by Y. Xia and H. Tong.  {\em Statistical Science} {\volume 26}{\separator}49--52.
+
+\item\formal{[[\tapiaEJP] ]} Tapia Granados, J. A. and Ionides, E. L. (2011). Health and macroeconomic fluctuations in contemporary Sweden. {\em European Journal of Population} {\volume 27}{\separator}157--184.
+
+
+
+\item\formal{[[\mayerJRSI] ]} \student{Mayer, B. T.}, Koopman, J. S., Ionides, E. L., Pujol, J. M. and  Eisenberg, J. N. S. (2011). A dynamic dose-response model to account for exposure patterns in risk assessment: A case study in inhalation anthrax. {\em Journal of the Royal Society Interface} {\volume 8}{\separator}506--517.
+
+
+\item\formal{[[\laneriPLOSCB] ]} \student{Laneri, K.}, \student{\mystudent Bhadra, A.}, Ionides, E. L., Bouma, M., Dhiman, R. C., Yadav, R. S. and Pascual, M. (2010).  Forcing versus feedback: Epidemic malaria and monsoon rains in NW India. {\em PLoS Computational Biology} {\volume 6}{\separator}e1000898.
+
+\item\formal{[[\heJRSI] ]}
+\student{He, D.}, Ionides, E. L. and King, A. A. (2010).
+Plug-and-play inference for disease dynamics: Measles in large and small towns as a case study. {\em Journal of the Royal Society Interface} {\volume  7}{\separator}271--283.
+
+
+\item\formal{[[\bretoAOAS] ]}
+ \student{\mystudent Bret\'{o}, C.},  \student{He, D.}, Ionides, E. L. and King, A. A. (2009).
+Time series analysis via mechanistic models. 
+{\em Annals of Applied Statistics} {\volume 3}{\separator}319--348.
+
+\item\formal{[[\schweiglerAEM] ]}
+\student{Schweigler, L. M.}, Desmond, J. S., McCarthy, M., Bukowski, K., Ionides, E. L., and Younger, J. G. (2009) Forecasting models of emergency department crowding. {\em Academic Emergency Medicine} {\volume 15}{\separator}301--308.
+
+\item\formal{[[\kingNATURE] ]}
+King, A. A., Ionides, E. L., Pascual, M. and Bouma, M. J. (2008) Inapparent infections and cholera dynamics. {\em Nature} {\volume 454}{\separator}877--880.
+
+\item\formal{[[\ionidesJCGS] ]}
+Ionides, E. L. (2008). Truncated importance sampling. {\em Journal of Computational and Graphical Statistics} {\volume 17}{\separator}295--311.
+
+\item\formal{[[\tapiaJHE] ]} 
+Tapia Granados, J. A. and Ionides, E. L. (2008). The reversal of the relation between economic growth and health progress: Sweden in the 19th and 20th centuries. {\em Journal of Health Economics} {\volume 27}{\separator}544--563.
+
+\item\formal{[[\ionidesBOOK] ]}  
+Ionides, E. L., \student{\mystudent Bret\'{o}, C.} and King, A. A. (2007). 
+ Modeling disease dynamics: Cholera as a case study.
+ Chapter 8 of {\em  Statistical Advances in the Biomedical Sciences} (edited by A. Biswas, S. Datta, J. Fine and M. Segal). Wiley, Hoboken NJ.
+
+
+\item\formal{[[\ionidesPNAS] ]}  
+Ionides, E. L., \student{\mystudent Bret\'{o}, C.} and King, A. A. (2006). 
+ Inference for nonlinear dynamical systems.
+ {\em Proceedings of the National Academy of Sciences of the USA} {\volume 103}{\separator}18438--18443.
+
+
+\item\formal{[[\greeneAJE] ]} 
+\student{Greene, S. K.}, Ionides, E. L. and Wilson,
+  M. L. (2006). Patterns of influenza-associated mortality among
+  U.S. elderly from 1968 to 1998 differ by geographical region
+  and virus strain. {\em American Journal of
+  Epidemiology} {\volume 163}{\separator}316--326. 
+
+
+\item\formal{[[\ionidesSINICA] ]} 
+Ionides, E. L. (2005). Maximum smoothed likelihood estimation.
+ {\em Statistica Sinica} {\volume 15}{\separator}1003--1014.
+
+
+\item\formal{[[\gageJNE] ]}  
+\student{Gage, G. J.},  \student{Ludwig, K.}, 
+   \student{Otto, K.}, Ionides, E. L. and
+  Kipke, D. (2005). Na\"{i}ve coadaptive cortical control. 
+  {\em Journal of Neural Engineering} {\volume 2}{\separator}52--63. 
+
+
+\item\formal{[[\ionidesJMB] ]}  
+ \student{Ionides, E. L.},  Fang, K. S.,  Isseroff, R. R., and  Oster, G. F. (2004).  Stochastic models for cell motion and taxis. {\em
+ Journal of Mathematical Biology {\volume 48}{\separator}23--37}.
+
+
+\item\formal{[[\fangJCS] ]}  
+ Fang, K. S.,  \student{Ionides, E. L.},  Oster, G.,  
+Nuccitelli, R.,   and Isseroff, R. R. (1999). Epidermal growth factor 
+relocalization and kinase activity are necessary for directional
+migration of keratinocytes in DC electric fields. 
+{\em Journal of Cell Science} {\volume 112}{\separator}1967--1978.
+\end{reflist}
+
+
+%\lsp
+%\begin{mylist}{MANUSCRIPTS SUBMITTED FOR PUBLICATION}
+
+%\item {\footnotesize Note: on all papers I am either the only statistician or the senior statistician. Students and postdocs are underlined.}
+
+%\end{mylist}
+
+%\newpage
+
+
+\lsp
+\begin{reflist} {NON-REFEREED PUBLICATIONS}
+
+%\item Park, J., and Ionides, E. L. (2019). A guided intermediate resampling particle filter for inference on high dimensional systems. {\em arxiv:1708.08543v2}.
+
+
+\item
+Koopman, J. S., Singh, P. and Ionides, E. L. (2016). Transmission modeling to enhance surveillance system function. In {\em Transforming Public Health Surveillance}, edited by S. J. N. McNabb et al. Elsevier.
+
+\item\formal{[[\ionidesJRSSBb] ]} 
+Ionides, E. L. (2010). Discussion of ``Particle Markov chain Monte~Carlo methods'' by C. Andrieu, A. Doucet and R. Holenstein.
+{\em Journal of the Royal Statistical Society, Ser. B.} {\volume 72}{\separator}323.
+
+\item\formal{[[\ionidesJRSSBa] ]}  
+Ionides, E. L. (2007). Discussion of ``Parameter Estimation for Differential Equations: A Generalized Smoothing Approach,'' by J. O. Ramsay, G. Hooker, D. Campbell and J. Cao. 
+{\em Journal of the Royal Statistical Society, Ser. B.} {\volume 69}{\separator}783--784.
+
+\item\formal{[[\gageEMBS] ]}  
+\student{Gage, G. J.}, Ionides, E. L. and
+  Kipke, D. (2005). Information capacity of brain machine
+  interfaces. {\em 27th Conference of IEEE Engineering in
+  Medicine and Biology Society}, 2110--2113.
+
+
+\end{reflist}
+
+\submittedGrants{
+\lsp
+\begin{mylist} {SUBMITTED GRANTS}
+
+\end{mylist}
+}
+
+\lsp
+
+\begin{mylist} {CURRENT GRANTS}
+
+\item{\bf 2018-2022} {\em Collaborative research: Urban vector-borne disease transmission demands advances in spatiotemporal statistical inference.}
+\\
+Role: Lead PI.
+%% NSF DMS-1761603 (University of Michigan) and NSF DMS-1761612 (University of Chicago)
+%% Dates: July 15, 2018 through July 14, 2022.
+\grantAmount{\\Total award: \$1,300,000.}
+
+
+\item{\bf 2017-2022 } {\em RTG: Understanding dynamic big data with complex structure.} 
+\\
+Role: Co-investigator (PI, Elizaveta Levina). 
+%% NSF-DMS 1646108
+%% Dates: September 1, 2017 through August 31, 2022. 
+\grantAmount{\\Total award: \$2,500,000.}
+
+
+\end{mylist}
+
+\lsp
+
+\begin{mylist} {COMPLETED GRANTS}
+
+\item{\bf 2014-2019 } {\em Center for Inference and Dynamics of Infectious Diseases}.
+\\
+%% NIH 1-U54-GM111274-01
+%% Dates: September 12, 2014 through June 6, 2019.
+NIH (Modeling of Infectious Disease Agent Study, Center of Excellence). \\
+Role: Investigator (PI, Elizabeth Halloran, Fred Hutchinson Cancer Research Center).
+\grantAmount{\\Individual award: \$624,770, estimated as 5$\times$yr1 expenditure (total \$12,000,000).}
+
+\item{\bf 2014-2019 } {\em Modeling the Effects of the Environment on Enteric Pathogen Dynamics}.
+\\
+%% 1-U01-GM-110712-01
+%% Dates: September 1, 2014 through June 30, 2019.
+NIH (Modeling of Infectious Disease Agent Study, Project). \\
+Role: Investigator (PI, Joseph Eisenberg)  
+\grantAmount{\\Individual award: \$198,580, estimated as 5$\times$yr1 expenditure (total \$2,000,000).}
+
+\item{\bf 2013-2017 } {\em Iterated filtering: new theory, algorithms and applications}.\\
+%% NSF-DMS 1308918
+%% Dates: July 1, 2013 through June 6, 2017.
+NSF (Division of Mathematical Sciences).\\
+Role: Principal Investigator.
+\grantAmount{\\Award: \$100,000.}
+
+
+\item{\bf 2014 } {\em  Industry partnership program: Sponsored internships at M-Financial.}\\
+Society of Actuaries.\\
+Role: Co-superviser of undergraduate interns.
+\grantAmount{\\Individual award: \$15,000.}
+
+\item{\bf 2012-2014 } {\em Efficient iterated filtering: theory and practice.}\\
+University of Michigan Associate Professor Fund.\\
+Role: Principal Investigator.
+\grantAmount{\\Award: \$78,039.}
+
+
+\item{\bf 2008-2014 } {\em HIV risk dynamics, genetic patterns, and control.}\\
+%NIH R01-AI078752
+NIH (R01 from National Institute of Allergy and Infectious Diseases).\\
+Role: Co-Investigator (PI, James Koopman).
+\grantAmount{\\ Individual award: \$49,373 (total \$1,621,180).}
+% 19143+5360 + 19430 + 5440 
+% 37,043 for 2011-2012 from subcontract form	
+
+
+\item {\bf 2013-2014}. {\em Analysis of the Association Between Cell Phone Use and Motor Vehicle Crashes}.\\
+Centers for Disease Control (CDC).\\
+Role: Co-investigator (PI, Ray Bingham).
+\grantAmount{\\ Individual award: \$13,949 (total \$100,000).}
+
+\item {\bf 2012-2013 } {\em The effectiveness of novice teen driver cell phone bans in reducing crashes.}\\
+University of Michigan Injury Center Pilot Study.\\
+Role: Principal Investigator.
+%\grantAmount{\\ Individual budget: \$9,333 (total \$25,000).}
+\grantAmount{\\Award: \$25,000.}
+
+\item{\bf 2008-2012 } {\em Inference for dynamic systems}.\\
+NSF (Division of Mathematical Sciences).\\
+Role: Principal Investigator.
+\grantAmount{\\Award: \$200,000.}
+
+\item{\bf 2009-2012 } {\em Mortality and Macroeconomic Conditions: Differential Vulnerability and Mechanisms}.\\
+% 5R21HD057411-02 
+NIH (R21 from National Institute of Child Health \& Human Development).\\
+Role: Co-Investigator (PI, Jos\'{e} Tapia Granados). 
+\grantAmount{\\ Individual award \$128,428 (total \$400,000).}
+
+\item{\bf 2008-2012 } {\em Research and Policy in Infectious Disease Dynamics}.\\
+NIH (Intergovernmental Personal Act position with Fogarty International Center).\\
+Role: Principal investigator.
+\grantAmount{\\Award: \$80,000.}
+
+\item{\bf 2006-2008 } {\em Vector-transmitted diseases in a changing world: a dynamical perspective.}\\
+Graham Environmental Sustainability Institute.\\
+Role: Co-Investigator (PI, Mercedes Pascual). 
+\grantAmount{\\ Individual award: \$32,706 (total \$196,292).}
+
+\item{\bf 2006-2008 } {\em Cortical control using multiple signal modalities}.\\
+%  1R21HD049842-01A2  NIH ref number 7146744
+NIH (R21 from National Institute of Child Health \& Human Development).\\
+Role: Co-Investigator (PI, Daryl Kipke).
+\grantAmount{\\ Individual award \$14,828 (total \$333,746).}
+
+\item{\bf 2004-2008 } {\em Collaborative research: The
+  interplay of extrinsic and intrinsic factors in epidemiological
+  dynamics: Cholera as a case study}.\\
+NSF (Ecology of Infectious Disease).\\
+Role: Co-Principal Investigator (PI, Mercedes Pascual).
+ \grantAmount{\\Individual award: \$165,388 (total \$477,577).}
+
+\end{mylist}
+
+\lsp
+\begin{mylist}{EDITORIAL POSITIONS}
+\item{\bf 2013-2015} Associate editor for Electronic Journal of Statistics.
+
+%\item{\bf 2009-present} Editorial board for Journal of Informatics and Mathematical Sciences.
+
+\item{\bf 2007-2009} Associate editor for Annals of Statistics.
+
+%\item{\bf 2004-present} Editorial board for International Journal of Statistics and Systems.
+
+
+\end{mylist}
+
+\lsp
+
+%\pagebreak
+
+\begin{mylist}{REFEREE SERVICE} %rrrrrrrrrrrrrrrrrrrrrrrrrrr
+\item {\bf Journal article review}: 
+American Journal of Epidemiology,
+American Mathematical Monthly,
+American Naturalist,
+Annals of Applied Statistics,
+Annals of Statistics,
+Bernoulli,
+Biology Letters,
+Biometrical Journal,
+Biometrics,
+BMC Infectious Diseases,
+Bulletin of Mathematical Biology,
+Clinical Infectious Diseases,
+Computational Statistics \& Data Analysis,
+Ecological Monographs,
+Ecology,
+Epidemics,
+Environmental Health Perspectives,
+European Physical Journal B (Condensed Matter and Complex Systems),
+Health Economics,
+Journal of Applied Statistics,
+Journal of Biological Dynamics,
+Journal of Biology,
+Journal of Mathematical Biology,
+Journal of Multivariate Analysis,
+Journal of Population Economics,
+Journal of Statistical Planning and Inference,
+Journal of the American Statistical Association, 
+Journal of the Royal Society Interface,  
+Journal of the Royal Statistical Society B: Statistical Methodology,
+Journal of the Royal Statistical Society C: Applied Statistics,
+Mathematical Biosciences,
+Nature,
+Nature Communications,
+NPJ Digital Media,
+Oxford Economic Papers,
+Physica D: Nonlinear Phenomena,
+PLoS Computational Biology,
+Proceedings of the National Academy of Sciences of the USA,
+Proceedings of the Royal Society B: Biological Sciences,
+Scandinavian Journal of Statistics,
+Science,
+Science Advances,
+Signal Processing,
+Signal Processing Letters,
+Statistical Science,
+Statistics \& Computing,
+Statistics \& Probability Letters,
+Statistics Surveys,
+Stochastic Environmental Research and Risk Assessment,
+Theoretical Population Biology,
+Wellcome Open Research.
+
+\item {\bf Books and book chapter review}:
+Cambridge University Press, 
+Prentice Hall,
+ Springer-Verlag,  
+ Wiley.
+
+
+%\end{mylist}
+
+%\lsp
+
+%\begin{mylist}{GRANT REFEREE SERVICE} %rrrrrrrrrrrrrrrrrrrrrrrrrrr
+
+\item {\bf Grant proposals review}: 
+NSF Computational and Data-Enabled Science and Engineering in Mathematical and Statistical Sciences;
+NSF Community and Population Ecology;
+NSF Smart and Connected Health Program;
+Canadian Statistical Science Institute;
+Massey Fund, New Zealand;
+Michigan Institute for Data Science;
+Michigan Institute for Computational Discovery and Engineering
+
+\item {\bf Tenure and promotion case review}:
+Arizona State University;
+Cornell University;
+Fred Hutchinson Cancer Research Center;
+Ohio State University;
+Pennsylvania State University;
+Queen's University, Ontario;
+University of British Columbia;
+University of California, Berkeley;
+University of Toronto, Ontario.
+
+\end{mylist}
+
+%\newpage 
+
+\begin{mylist}{DEPARTMENTAL SERVICE}
+
+\item{\bf 2014-2021 } Director of Undergraduate Programs
+\item{\bf 2019-2021 } Undergraduate Data Science Program Committee, chair
+\item{\bf 2017-2021 } Computing committee, chair
+\item{\bf 2018-2021} Michigan Student Symposium for Interdisciplinary Statistical Sciences (MISSISS), faculty coordinator
+\item{\bf 2019-2021 } Grade review committee, member  
+\item{\bf 2012-2021 } PhD admissions committee
+\item{\bf 2020 } Operations under Covid, member
+\item{\bf 2020 } Teaching under Covid, member
+\item{\bf 2017-2018 } Undergraduate Data Science Program Committee, member  
+\item{\bf 2014-2017 } Computing committee, member
+\item{\bf 2015-2017 } Undergraduate research committee, chair
+\item{\bf 2014-2015, 2016-2018 } Undergraduate curriculum committee, chair
+\item{\bf 2013-2015 } Department executive committee
+\item{\bf 2004-2011, 2013-2016 } Undergraduate curriculum committee, member
+\item{\bf 2012-2017 } Undergraduate advisor
+\item{\bf 2006-2014 } PhD qualifying exam committee
+\item{\bf 2011-2012, 2013-2014 } Faculty search committee
+\item{\bf 2008-2013 } Incoming PhD student screening and placement exam committee
+\item{\bf 2008-2009 } Outreach committee
+\item{\bf 2004-2005 } Graduate curriculum committee
+\item{\bf 2002-2004 } Curriculum committee 
+\end{mylist}
+
+\lsp
+
+\begin{mylist}{OTHER PROFESSIONAL SERVICE}
+
+\item{\bf 2018-2021 } Advisory board for EPSRC grant {\it New Approaches to Bayesian Data Science: Tackling Challenges from the Health Sciences}  (PI, Paul Fearnhead).
+
+\item{\bf 2019 } Instructor for a short course on {\it Partially observed systems: combining data with science} at University of Michigan.
+
+\item{\bf 2015, 2016, 2017, 2018, 2019, 2020 } Instructor for a short course on {\it Simulation-based Inference for Epidemiological Dynamics} at the Summer Institute in Statistics and Modeling in Infectious Diseases, University of Washington, Seattle.
+
+\item{\bf 2017 } External PhD examiner, Department of Statistics, University of British Columbia.
+
+%\item{\bf 2016}. Organizer for a session on ``Networks in Disease Transmission Dynamics'' at the Isaac Newton Institute workshop on Theoretical Foundations for Statistical Network Analysis.
+
+\item{\bf 2014 } Organizer for BIRS meeting on {\it Statistics and Nonlinear Dynamics in Biology and Medicine}.
+
+\item{\bf 2012 } Organizer for NIH-supported workshop on {\it Simulation-based Inference for Mechanistic Models}.
+
+\item{\bf 2010 } External PhD examiner, 
+%for Jonas Str\"{o}jby (
+Department of Mathematical Statistics, Lund University, Sweden.
+
+\item{\bf 2008-present } Developer of R software package {\texttt{pomp}} for inference from Partially Observed Markov Processes, {\texttt{http://cran.r-project.org}}.
+
+\item{\bf 2008-2012 } Member of RAPIDD (Research and Policy for Infectious Disease Dynamics; a program established by NIH Fogarty International Center and the Department of Homeland Security for improving the capacity to plan and respond to infectious disease threats via mathematical modeling and statistical analysis).
+
+\item{\bf 2008 } Organizer for an invited session on {\it Time Series Analysis via Mechanistic Models} at JSM.
+
+\item {\bf 2007-2010 } Member of National Center for Ecological Analysis and Synthesis (NCEAS) working group on {\it Inference for Mechanistic Models}, involved four meetings at NCEAS (Santa Barbara) during 2007--2010.
+ 
+
+%\item {\bf 1997 } Summer internship at Bell Laboratories working with Mark Hansen on spatial modelling of wafer defects in manufacture of integrated circuit silicon chips.
+
+%\item {\bf 1994 }  Summer research project in the University of Cambridge Statistical Laboratory on stochastic networks with Richard Gibbens.
+
+%\item {\bf 1993 } Summer research project in the University of Cambridge Pharmacology Department Drug Design Group on applications of simulated annealing with Philip Dean.
+
+\end{mylist}
+
+
+\lsp
+
+%\pagebreak
+%\vspace{5mm}
+
+\begin{mylist}{COURSES TAUGHT}
+
+\item{University of Michigan}: 
+Applied Statistics II (STATS 401), 
+Introduction to Probability (MATH/STATS 425), 
+Analysis of Time Series (STATS 531), 
+Applied Probability and Stochastic Modeling (STATS 620), 
+Graduate proseminar (STATS 810).
+
+\item{University of Chicago}: State Space
+Models (STATS 333), Linear Models and Experimental Design (STATS 222),
+Statistical Methods and their Applications (STATS 220). 
+
+\end{mylist}
+
+\lsp
+
+\begin{reflist}{PHD STUDENTS}
+
+\item{Kidus Asfaw.} {\it Simulation-based Inference for Partially Observed Markov Process Models with Spatial Coupling} (2021). Jointly supervised with Aaron King.
+
+%\item{Caleb Ki.}  (Current). Jointly supervised with Jonathan Terhorst.
+
+\item{Timothy Necamp.} {\it Design and Analysis of Sequential Randomized Trials with Applications to Mental Health and Online Education} (2019). Jointly supervised with Zhenke Wu. 
+
+\item{Joon Ha Park.} {\it Computational Inference Algorithms for Spatiotemporal Processes and Other Complex Models} (2018). 
+%Now a postdoc at Boston University.
+
+ \item{R. Alexander Smith.} {\it Inference of infectious disease dynamics from genetic data via Sequential Monte Carlo} (2018). Jointly supervised with Aaron King. 
+%Now a postdoc at Queen's University, Ontario, Canada.
+
+ \item{Dao Nguyen.} {\it Iterated filtering and smoothing with application to infectious disease models} (2016). 
+%Now Assistant Professor of Mathematics at University of Mississippi.
+
+\item{Zhen Wang.} {\it Topics in time series analysis with macroeconomic applications} (2012). 
+%Now a statistician at Merck.
+
+\item{Anindya Bhadra.} {\it Time series analysis for nonlinear dynamical systems with applications to modeling of infectious diseases} (2010).
+%Now Associate Professor of Statistics at Purdue.
+
+\item{Carles Bret\'{o}.} {\it Statistical inference for nonlinear dynamical systems} (2007). 
+%Now Assistant Professor of Economics at University of Valencia, Spain.
+
+
+\end{reflist}
+
+\lsp
+
+\begin{reflist}{POSTDOCTORAL FELLOWS}
+
+\item{Brandon Legried } (Current). NSF trainee on {\it Understanding dynamic big data with complex structure}, working on inferring population dynamics from genetic sequence data.
+  
+\item{Patricia (Ning) Ning } (Current). NSF/NIH funded project on {\it Urban vector-borne disease transmission demands advances in spatiotemporal statistical inference}.
+
+\item{Qianying Lin } (Current). Michigan Institute for Data Science Institute fellowship on {\it Phylodynamic inference with applications to epidemiology}. Current. Jointly supervised with Aaron King.
+  
+\item{Kevin Bakker} (2018-2020). NIH postdoctoral fellowship on {\it Uncovering the Mechanisms Driving Seasonal Polio Incidence: A Modeling Approach Towards Endgame Strategies}. Jointly supervised with Mercedes Pascual. Now Assistant Research Scientist at University of Michigan.
+
+\item{Carles Bret\'{o}} (2015-2018). NIH-funded project on {\it X-Raying High-Dimensional Infectious disease} as part of the Center for Inference and Dynamics of Infectious Diseases .  Jointly supervised with Aaron King. Now Assistant Professor of Economics at University of Valencia, Spain.
+
+\item{John Marino} (2015-2016). NSF postdoctoral fellowship on {\it Enhancement of ecological inference and forecasting, with applications to critical threats facing Great Lakes fisheries}. Jointly supervised with Scott Peacor. Now Assistant Professor of Biology at Bradley University.
+  
+\end{reflist}
+
+\lsp
+
+\begin{mylist}{PHD THESIS COMMITTEES}
+
+\item 
+\begin{tabbing}
+Kevin Bakker \hspace{2cm} \= 2017 \hspace{1cm} \= Ecology \& Evolutionary Biology\\
+Christoph Boehm \>  2016  \> Finance\\
+Peter Boldenow \>2012 \> Epidemiology\\
+Clinton Carlson \>2014 \> Civil \& Envoronmental Engineering\\
+Holly Chung \>2013 \> Mathematics\\
+Bryce Corrigan \>2012 \> Political Science\\
+Luis Fernando Chaves \>2008 \> Ecology \& Evolutionary Biology\\
+Ting-Wu Chuang \>2009 \> Epidemiology\\
+Yu-Han Kao \> 2018 \> Epidemiology\\
+Kohinoor Dasgupta \>2013 \> Statistics \\
+Greg Gage \>2006 \> Bio-engineering\\ 
+Rachel Gicquelais \> 2018 \> Epidemiology\\
+Camden Gowler \> 2020 \> Ecology \& Evolutionary Biology\\
+Sharon Greene \>2005 \> Epidemiology\\ 
+Huaiying Gu \>2013 \> Mathematics\\
+John Haiducek \>2018\> Climate \& Space Sciences \& Engineering\\
+James Henderson \>2015 \> Statistics\\
+Christopher Henry \> 2017 \> Epidemiology\\
+Yu-Han Kao \> 2018 \> Epidemiology\\
+Roxanne Katus \>2014 \> Atmospheric, Oceanic \& Space Sciences\\
+Dong-Yun Kim \>2003 \> Statistics\\
+Alicia Kraay \> 2017 \> Epidemiology\\
+Rohit Kulkarni \>2004 \> Statistics\\
+Peter Larsen \>2013 \> Epidemiology\\
+Sheng Li \>2011 \>Epidemiology\\
+Olga Marchenko \>2012 \> Statistics\\
+Bryan Mayer \>2011 \> Biostatistics\\
+Bryan Moyers \>2017\> Bioinformatics\\
+Hirak Parikh \>2009 \> Bio-engineering\\
+Caroline Parins-Fukuchi \> 2019 \> Ecology \& Evolutionary Biology\\
+Akarin Phaibulpanich \>2006 \> Statistics\\
+Clara Shaw \>2019\> Ecology \& Evolutionary Biology\\
+Krithika Suresh \> 2018 \> Biostatistics\\
+Natalya Verbitsky \> 2006 \> Statistics\\
+Kam Chung Wong \> 2017 \> Statistics\\
+Azadeh Yazdan \> 2010 \> Bio-Engineering\\
+Xuebo Yue \> current \> Industrial and operations engineering\\
+Xinyu Zhang \> 2017 \> Epidemiology \\
+\end{tabbing}
+
+
+\end{mylist}
+
+\lsp
+\begin{reflist}{UNDERGRADUATE RESEARCH PROJECTS}
+\item{Anna Rosengart and Andy Gu}. Spatiotemporal epidemiology of dengue virus and the curse of dimensionality for Monte Carlo methods. Research project (2021).
+  \item{Chao P{\'e}ter Yang}. The classical-romantic dichotomy: A machine learning approach. Honors thesis, co-advised with Daniel Forger (2021).
+  \item{Yiyang Nan and Allister Ho}. Modeling and data analysis to understand spatiotemporal epidemiology of dengue virus. Research project (2020).
+  \item{Isabella Gierlinger and William Smith}. Inference from viral genomes. Research project (2019).
+  \item{Xiaotong Yang}. {\em Fitting mechanistic models to Daphnia panel data within a panelPOMP framework}, honors thesis (2018).
+\item{Yichen Zhang}. {\em Environmental drivers of diarrheal infection}, summer project (2017).
+\item{Haoran Chen}. {\em Epidemiological time series analysis}, summer project (2017).
+\item{Rebecca Mukena Yumba}.  {\em Poliovirus Transmission Between Children, Teenagers and Adults: A Partially Observed Markov Process Analysis} (2016).
+\item{Hwanwoo Kim}. {\em Topics in design and analysis of clinical trials for adaptive treatment plans} (2015). Winner of the departmental honors thesis award, and 2nd prize winner in the national Undergraduate Statistics Project Competition.
+\item{Xi Wu and Kelly Schmidt}. {\em Identification of insurance companies at risk of insolvency} (2014).
+\item{Cong Zhang}. {\em Investigating sequential Monte Carlo methods for time series analysis} (2012).
+\item{Xiaoai Chai}. {\em Building POMP objects in R for a dynamic general stochastic equilibrium model}~(2011).  
+\item{Murat Ahmed}. {\em Modeling cholera as a stochastic process} (2005).
+
+\end{reflist}
+
+
+\lsp
+\begin{mylist} {PROFESSIONAL ORGANIZATIONS}
+\item {\it American Association for the Advancement of Science} (elected fellow). 
+\item {\it International Statistical Institute} (elected member).
+\item {\it Institute of Mathematical Statistics}.
+\item {\it American Statistical Association}.
+\end{mylist}
+
+\lsp
+
+%\newpage
+
+%\begin{mylist}{AWARDS}
+
+%\item{\bf 1995 } Loeve Fellowship in Probability from University of California, Berkeley.
+
+%\item{\bf 1993 } Senior Scholarship from Trinity College, Cambridge.
+
+%\item{\bf 1992 } Junior Scholarship from Trinity College, Cambridge.
+%\end{mylist}
+
+%\lsp
+
+\begin{mylist}{SEMINARS, PRESENTATIONS AND WORKSHOPS}
+                 \setlength{\itemsep}{0.15 cm}
+
+\item{\bf 2021} JSM, online, speaker in invited session on {\it High-Dimensional Parameter Learning on Spatio-Temporal Hidden Markov Models and Its Applications in Epidemiology.}
+                 
+\item{\bf 2020 } Workshop on {\it Mathematical modeling and statistical analysis of infectious disease outbreaks}, Centre International de Rencontres Math\'{e}matiques, Luminy, France; invited speaker.
+
+\item{\bf 2020 } University of Michigan, Statistics department seminar.
+
+\item{\bf 2019 } Workshop on {\it Bayes for Health}, Lancaster, UK; invited speaker.
+
+  \item{\bf 2019 } Los Alamos National Laboratories, Center for Nonlinear Studies seminar.
+  
+  \item{\bf 2019 } Ohio State University, Statistics department seminar.
+  
+\item{\bf 2018 } Workshop on {\it Future challenges in statistical scalability}, Isaac Newton Institute, Cambridge, UK; invited speaker.
+
+\item{\bf 2018 }  Workshop on {\it Design and Analysis of Infectious Disease Studies}, Mathematisches Forschungsinstitut Oberwolfach, Germany; invited speaker.
+
+\item{\bf 2017 } Workshop on {\it New Perspective on State Space Models}, Casa Matem\'{a}tica Oaxaca, Mexico; invited speaker.
+
+\item{\bf 2017 } JSM, Baltimore, speaker in invited session on {\it Advances in Spatio-Temporal Epidemiology}.
+
+\item{\bf 2017 } University of Chicago, presentation to the Pascual and Cobey groups, Department of Ecology \& Evolution.
+
+\item{\bf 2017 } Series of six guest lectures at University of Pennsylvania, Department of Statistics, on {\it Likelihood-based inference for dynamic systems}.
+
+\item{\bf 2016 } Harvard University, Statistics department seminar.
+
+\item{\bf 2015 } London School of Hygiene and Tropical Medicine, Centre for the Mathematical Modelling of Infectious Diseases seminar.
+
+\item{\bf 2015 } French National Institute for Agricultural Research, Research Unit in Applied Mathematics and Computer Science seminar.
+
+\item{\bf 2015 } 8th International Conference of the ERCIM WG on Computational and Methodological Statistics, London, UK; invited speaker.
+
+\item{\bf 2015 } Workshop on {\it Silent Circulation during the Polio Eradication Endgame}, University of Washington, Seattle; invited participant. 
+
+\item{\bf 2014 } Workshop on {\it Advancing Software for Ecological Forecasting}, at the National Centre for Supercomputing Applications, University of Illinois at Urbana-Champaign; invited participant.
+
+\item{\bf 2014 } ENAR, Baltimore; invited speaker.
+
+\item{\bf 2013 }  Workshop on {\it Design and Analysis of Infectious Disease Studies}, Mathematisches Forschungsinstitut Oberwolfach, Germany; invited participant.
+
+\item{\bf 2013 } European Meeting of Statisticians, Budapest, Hungary; contributed speaker.
+
+\item{\bf 2013 } Midwest Statistics Research Conference, University of Wisconsin, Madison;  invited speaker.
+
+\item{\bf 2013 }  Research and Policy in Infectious Disease Dynamics and Emerging Pathogens Institute workshop on {\it Survival Analysis and Phylogenetics in Infectious Disease Epidemiology}, University of Florida; invited participant.
+
+\item{\bf 2013 } University of Michigan, Epidemiology department seminar.
+
+\item{\bf 2012 } JSM, San Diego; discussant for invited session.
+
+\item{\bf 2012 } University of California, Davis, Statistics Department seminar.
+
+\item{\bf 2012 } Mathematical Biology Institute workshop on {\it Statistical Inference for Mathematical Biology}, at Ohio State University; plenary speaker.
+
+\item{\bf 2012 } Research and Policy in Infectious Disease Dynamics meeting, Washington DC; annual convocation.
+
+\item{\bf 2011 } University of Michigan, Industrial and Operations Research department seminar.
+
+\item{\bf 2011 } University of Michigan, Ecological Theory Group seminar.
+
+\item{\bf 2011 } Research and Policy in Infectious Disease Dynamics meeting, Washington DC; annual convocation.
+
+\item{\bf 2010 } IMS annual meeting, Gothenburg, Sweden; invited speaker.
+
+\item{\bf 2010 } Research and Policy in Infectious Disease Dynamics meeting, Washington DC; annual convocation.
+
+\item{\bf 2009 } Harvard University, Epidemiology of Infectious Diseases seminar.
+
+\item{\bf 2009 } Midwest Statistics Research Conference, University of Chicago;  invited speaker.
+
+\item{\bf 2009 } University of Michigan, Center for Computational Medicine and Biology seminar.
+
+%\item{\bf 2008} University of Michigan, Department of Statistics seminar.
+
+\item{\bf 2008 } Duke University, Computational Biology \& Bioinformatics seminar.
+
+\item{\bf 2008 } Workshop on {\it Sequential Monte~Carlo methods} at SAMSI, North Carolina; invited discussant.
+
+\item{\bf 2008 } University of Cambridge Department of Engineering, Signal Processing group seminar.
+
+\item{\bf 2008 } University of Cambridge Department of Applied Mathematics and Mathematical Physics, Mathematical Biology group seminar.
+
+\item{\bf 2008 } Columbia University, Statistics department seminar.
+
+\item{\bf 2008 } Pennsylvania State University, Center for Infectious Disease Dynamics, workshop on {\it Epidemic model hierarchies and model validation}; invited speaker.
+
+\item{\bf 2007 } University of St Andrews, seminar for National Centre for Statistical Ecology, 
+
+\item{\bf 2007 } Cornell University, Statistics department seminar.
+
+\item{\bf 2007 } Wayne State University, Probability and Statistics group seminar.
+ 	
+\item{\bf 2007 }  Workshop on {\it Statistical Methods for Modeling Dynamic Systems}, Montreal; invited speaker.
+
+\item{\bf 2007 } University of Cambridge, Statistics group seminar.
+
+\item{\bf 2007 } University of Oxford, Statistics department seminar.
+
+
+\item{\bf 2007 } Pennsylvania State University, Statistics department seminar.
+
+\item{\bf 2007 } Pennsylvania State University, Center for Infectious Disease Dynamics seminar.
+
+\item{\bf 2007 } University of Pittsburgh, Mathematical Biology group seminar.
+
+\item{\bf 2006 }  University of Michigan,
+  Statistics department seminar. 
+\item{\bf 2006 }  SIAM / Society for Mathematical Biology annual meeting, Raleigh, North Carolina; invited minisymposium speaker.
+\item{\bf 2006 }  Northwestern University, 
+ Biostatistics department seminar.
+\item{\bf 2005 }  Carnegie Mellon University, 
+ Statistics department seminar.
+\item{\bf 2005 }  NSF workshop on Ecology of
+  Infectious Diseases at Washington, D.C.; poster presentation.
+\item{\bf 2005 } Montreal statistics
+  colloquium speaker (CRM-ISM-GERAD).
+\item{\bf 2004 } Joint Statistical Meetings at
+  Toronto; contributed presentation.
+\item{\bf 2004 } IMS/Bernoulli Society meeting at Barcelona; contributed presentation.
+\item{\bf 2004 } University of Western Ontario, 
+ Statistics department seminar.
+\item{\bf 2004 } NSF workshop on Ecology of
+  Infectious Diseases at Arlington, VA; participant.
+\item{\bf 2004 } Workshop on Statistical Analysis of
+  Neuronal Data at Pittsburg, PA; participant.
+\item{\bf 2003 }  Workshop on Point Processes - Theory and Applications,
+  Banff International Research Station; invited speaker.
+\item{\bf 2002 }  University of Michigan,
+  Statistics department seminar. 
+\item{\bf 2002 }  University of Chicago Graduate School of Business, Econometrics and Statistics seminar. 
+\item{\bf 2001 } University of California, Los Angeles, Statistics department seminar. 
+\item{\bf 2001 }  University of Chicago, Statistics department seminar.  
+\item{\bf 2000 } University of California, Berkeley, Statistics department Neyman seminar.
+\end{mylist}
+
+
+
+\end{document}
+
+
+
+
+
+
+
+
+
+
