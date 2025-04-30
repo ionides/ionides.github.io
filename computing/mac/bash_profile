@@ -1,0 +1,202 @@
+# /etc/bashrc
+# Set up for Mac with bash
+# System wide functions and aliases
+# Environment stuff goes in /etc/profile
+# modifications by <cdgrieb@umich.edu> for LSA environment 
+
+# By default, we want this to get set.
+# Even for non-interactive, non-login shells.
+if [ $UID -gt 99 ] && [ "`id -gn`" = "`id -un`" ]; then
+	umask 002
+else
+	umask 022
+fi
+
+# are we an interactive shell?
+if [ "$PS1" ]; then
+    case $TERM in
+	xterm*)
+	    	PROMPT_COMMAND='echo -ne "\033]0;${USER}@${HOSTNAME%%.*}:${PWD/#$HOME/~}"; echo -ne "\007"'
+		;;
+	screen)
+		PROMPT_COMMAND='echo -ne "\033_${USER}@${HOSTNAME%%.*}:${PWD/#$HOME/~}"; echo -ne "\033\\"'
+		;;
+	*)
+		PROMPT_COMMAND='echo -ne "\033_${USER}@${HOSTNAME%%.*}:${PWD/#$HOME/~}"; echo -ne "\033\\"'
+	    ;;
+    esac
+    # Turn on checkwinsize
+    shopt -s checkwinsize
+
+fi
+
+# 
+# ADDED FUNCTIONALITY FOR *.bash script under '/etc/profile.d'
+# <cdgrieb> 03-03-2009
+# <also need to combine the below listed logic>
+# 
+for i in /etc/profile.d/*.sh 
+do
+	if [ -r "$i" ]; then
+		. $i
+	fi
+done
+unset i
+
+for i in /etc/profile.d/*.bash
+do
+	 if [ -r "$i" ]; then
+               . $i
+         fi
+done
+unset i
+
+# Added by ELI 
+
+alias python='/Library/Frameworks/Python.framework/Versions/3.12/bin/python3'
+alias py='python'
+alias pip='/Library/Frameworks/Python.framework/Versions/3.12/bin/pip'
+
+# Dropbox shortcuts
+ddx='University of Michigan Dropbox/Edward Ionides'
+alias dec='cl ~/"$ddx"/dec'
+alias dd='cd ~/Downloads ; ls'
+alias dx='cl ~/"$ddx"'
+alias dre='cl ~/"$ddx"/research'
+alias det='cl ~/"$ddx"/etravel'
+alias dst='cl ~/"$ddx"/students'
+alias dgr='cl ~/"$ddx"/grant'
+alias dco='cl ~/"$ddx"/computing'
+alias dfa='cl ~/"$ddx"/family'
+alias ddu='cl ~/"$ddx"/dup'
+alias d531='cl ~/"$ddx"/531'
+alias d810='cl ~/"$ddx"/810'
+
+# Git repo shortcuts
+alias g531='cl ~/git/531w25'
+alias g810='cl ~/git/810f24'
+alias gpy='cl ~/git/pypomp'
+alias gda='cl ~/git/Daphnia-ms/daphnia-article'
+alias gsp='cd ~/git/spatPomp ; ls'
+alias gdi='cl ~/git/diffPomp/paper'
+alias gbi='cl ~/git/bib'
+alias gio='cl ~/git/ionides.github.io'
+
+alias joss='docker run --rm -it  -v $PWD:/data  -u $(id -u):$(id -g)  openjournals/inara  -o pdf,crossref paper.md'
+
+# ssh shortcuts
+alias doob='ssh -Y ionides@doob.stat.lsa.umich.edu'
+alias glk='ssh -Y ionides@greatlakes.arc-ts.umich.edu'
+db="doob.stat.lsa.umich.edu"
+gl="greatlakes.arc-ts.umich.edu"
+
+alias x='/Applications/Utilities/Terminal.app/Contents/MacOS/Terminal &'
+
+# pdf viewing shortcuts
+alias a='open'
+complete -f -X "!*.pdf" a
+
+# Latex shortcuts
+alias b='bibtex'
+complete -f -X "!*.tex" bibtex
+complete -f -X "*.tex" b
+alias p='pdflatex'
+complete -f -X "!*.tex" pdflatex
+complete -f -X '!*.tex' p
+bg () { grep -e "$*" ~/git/bib/*.bib ; }
+
+# Emacs shortcuts
+# e () { /Applications/Emacs.app/Contents/MacOS/Emacs "$*" & }
+# e () { emacs "$*" -g 120x48+300+100 -font 10x20 & }
+alias enw='emacs -nw'
+e () { emacs "$*" -font 10x20 & }
+alias et='e'
+complete -f -X "!*.tex" et
+alias er='e'
+complete -f -X "!*.Rnw" er
+#complete -G "*.tex" e
+
+# Shortcuts for editing profile
+alias eb='e ~/.bash_profile'
+alias sb='source ~/.bash_profile'
+
+# shell shortcuts
+m () { more "$*"  ; }
+cl () { cd "$*"  ; ls ; }
+alias o='open'
+complete -f -X "!*.html" o
+alias clean='rm *.log ; rm *.dvi ; rm *.aux ; rm *.bbl ; rm *.blg ; rm *.d ; rm *.toc ; rm *.out ; rm *.nav ; rm *.snm ; rm *4up.ps ; rm *.spl ; rm *~ ; ls'
+
+# Make shortcuts
+alias mk='make'
+complete -f -X "!*.pdf" mk
+
+# git shortcuts
+alias gitlog='git log --graph --abbrev-commit --decorate --all'
+gitls () { git diff-tree  --name-status -r @{$*} master ; }
+alias gst='git status'
+alias log='git log'
+alias gam='git commit -am'
+alias g='cl ~/git'
+alias push='git push'
+alias pull='git pull'
+alias log='git log'
+
+# R shortcuts
+alias ri='R CMD INSTALL .'
+
+_md()
+{
+    local DOWNLOADS_DIR=$HOME/Downloads
+    local cmd=$1 cur=$2 pre=$3
+    local arr i file
+
+    arr=( $( cd "$DOWNLOADS_DIR" && compgen -f -- "$cur" ) )
+    COMPREPLY=()
+    for ((i = 0; i < ${#arr[@]}; ++i)); do
+        file=${arr[i]}
+        if [[ -d $DOWNLOADS_DIR/$file ]]; then
+            file=$file/
+        fi
+        COMPREPLY[i]=$file
+    done
+}
+md() { cwd=$PWD ; cd ~/Downloads ; mv $* "$cwd" ; cd "$cwd" ; }
+complete -F _md -o nospace md
+
+
+# >>> conda initialize >>>
+# !! Contents within this block are managed by 'conda init' !!
+###  25-03-26 moving away from conda
+### __conda_setup="$('/opt/anaconda3/bin/conda' 'shell.bash' 'hook' 2> /dev/null)"
+### if [ $? -eq 0 ]; then
+###     eval "$__conda_setup"
+### else
+###     if [ -f "/opt/anaconda3/etc/profile.d/conda.sh" ]; then
+###         . "/opt/anaconda3/etc/profile.d/conda.sh"
+###     else
+###         export PATH="/opt/anaconda3/bin:$PATH"
+###     fi
+### fi
+### unset __conda_setup
+# <<< conda initialize <<<
+
+
+# Setting the path
+
+### start with just the basic default path
+PATH=$(getconf PATH)
+
+## add whatever else is needed
+export PATH="/Library/Frameworks/Python.framework/Versions/3.12/bin:${PATH}"
+
+export PATH=$PATH:/Applications/RStudio.app/Contents/MacOS/pandoc
+
+export PATH=/usr/local/opt/qt/bin:$PATH
+
+### adds homebrew locations to the path
+eval "$(/opt/homebrew/bin/brew shellenv)"
+
+### various other things 
+export PATH=$PATH:"/opt/local/bin:/usr/local/bin:/System/Cryptexes/App/usr/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin:/opt/X11/bin:/Library/Apple/usr/bin:/usr/local/MacGPG2/bin:/Library/TeX/texbin"
+
