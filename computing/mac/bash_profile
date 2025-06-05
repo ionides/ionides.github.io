@@ -53,9 +53,11 @@ unset i
 
 # Added by ELI 
 
-alias python='/Library/Frameworks/Python.framework/Versions/3.12/bin/python3'
+# comment out these aliases when we want to be extra-careful about virtual environments
+# alias python='/Library/Frameworks/Python.framework/Versions/3.12/bin/python3'
+# alias pip='/Library/Frameworks/Python.framework/Versions/3.12/bin/pip'
 alias py='python'
-alias pip='/Library/Frameworks/Python.framework/Versions/3.12/bin/pip'
+
 
 # Dropbox shortcuts
 ddx='University of Michigan Dropbox/Edward Ionides'
@@ -193,7 +195,8 @@ complete -F _md -o nospace md
 PATH=$(getconf PATH)
 
 ## add whatever else is needed
-export PATH="/Library/Frameworks/Python.framework/Versions/3.12/bin:${PATH}"
+# remove this from the path when we want to be extra careful about virtual environments
+# export PATH="/Library/Frameworks/Python.framework/Versions/3.12/bin:${PATH}"
 
 export PATH=$PATH:/Applications/RStudio.app/Contents/MacOS/pandoc
 
