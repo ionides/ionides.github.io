@@ -74,11 +74,15 @@ alias dfa='cl ~/"$ddx"/family'
 alias ddu='cl ~/"$ddx"/dup'
 alias d531='cl ~/"$ddx"/531'
 alias d810='cl ~/"$ddx"/810'
+alias d700='cl ~/"$ddx"/700'
 alias djr='cl ~/"$ddx"/students/kevin_tan/jrssb'
 
 # Git repo shortcuts
+alias g='cl ~/git'
 alias g531='cl ~/git/531w25'
-alias g810='cl ~/git/810f24'
+alias g810='cl ~/git/810f25'
+alias g700='cl ~/git/700f25'
+alias gst='cl ~/git/students'
 alias gpy='cl ~/git/pypomp'
 alias gda='cl ~/git/Daphnia-ms/daphnia-article'
 alias gsp='cd ~/git/spatPomp ; ls'
@@ -141,13 +145,11 @@ complete -f -X "!*.pdf" mk
 # git shortcuts
 alias gitlog='git log --graph --abbrev-commit --decorate --all'
 gitls () { git diff-tree  --name-status -r @{$*} master ; }
-alias gst='git status'
+alias sta='git status'
 alias log='git log'
-alias gam='git commit -am'
-alias g='cl ~/git'
+alias com='git commit -am'
 alias push='git push'
 alias pull='git pull'
-alias log='git log'
 
 # R shortcuts
 alias ri='R CMD INSTALL .'
