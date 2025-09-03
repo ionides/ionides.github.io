@@ -1,0 +1,37 @@
+<title>Correction to Bhadra et al. (2011)</title>
+
+Correction to
+<span style="font-variant: small-caps;">Bhadra, A., Ionides, E. L., Laneri, K., Pascual, M., Bouma, M. and Dhiman, R. C. </span>(2011). 
+Malaria in Northwest India: Data analysis via partially observed stochastic differential equation models driven by Levy noise. 
+<i>Journal of the American Statistical Association</i> <b>106</b> 440-451.
+<a href="http://dx.doi.org/10.1198/jasa.2011.ap10323">http://dx.doi.org/10.1198/jasa.2011.ap10323</a>.
+<p>
+September 3, 2025.
+<p>
+Equation (8) should read
+<math><mi>d&lambda;</mi><sub>1</sub>/dt = (<mi>&lambda;d&Gamma;/dt - &lambda;<sub>1</sub></mi>)k&tau;<sup>-1</sup></math>
+to be consistent with (7).
+ If <math><mi>&Gamma;(t)</mi></math> were differentiable, this follows by writing (7) as <math><mi>k</mi></math> nested convolutions of exponential densities with rate <math><mi>k/&tau;</mi></math>, and applying the Leibniz rule for integration under the integral sign.
+  Since  <math><mi>&Gamma;(t)</mi></math> is a jump process, <math><mi>d&Gamma;/dt</mi></math> is interpreted via a sum of Dirac delta functions at jump times, but the argument remains essentially the same.
+<p>
+The code is implemented correctly to be consistent with Equation (7).
+Equations (8) and (9) are represented in the code with <code>nT=2</code> stages as
+<br>
+<code>
+  <br>
+  dT1dt = (lambda * dgammadt-T1)*nT/tau;
+  <br>
+  dmudt  = (T1-mu)*nT/tau;   
+  <br>
+</code>
+<p>
+The numerical solution is coded to make an Euler approximation to the Gamma noise,
+<br>
+<code>
+  <br>
+  dgammadt=rgamma(dt/(sigSE*sigSE),(sigSE*sigSE)/dt);
+  <br>
+</code>
+
+<p>
+We thank Hannes Kühnert for pointing out this issue.
