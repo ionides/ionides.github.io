@@ -120,7 +120,8 @@ bg () { grep -e "$*" ~/git/bib/*.bib ; }
 # e () { /Applications/Emacs.app/Contents/MacOS/Emacs "$*" & }
 # e () { emacs "$*" -g 120x48+300+100 -font 10x20 & }
 alias enw='emacs -nw'
-e () { emacs "$*" -font 10x20 & }
+# e () { emacs "$*" -font 10x20 & }
+e () { emacs "$*" & }
 alias et='e'
 complete -f -X "!*.tex" et
 alias er='e'
