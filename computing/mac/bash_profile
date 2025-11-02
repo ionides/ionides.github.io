@@ -123,11 +123,18 @@ bg () { grep -e "$*" ~/git/bib/*.bib ; }
 # e () { emacs "$*" -g 120x48+300+100 -font 10x20 & }
 alias enw='emacs -nw'
 # e () { emacs "$*" -font 10x20 & }
-e () { emacs "$*" & }
+e () { emacs "$*" -g 100x60 & }
 alias et='e'
 complete -f -X "!*.tex" et
-alias er='e'
-complete -f -X "!*.Rnw" er
+
+# set up emacs on top right
+er () { emacs "$*" -g 100x60+1200+0 & }
+
+# set up emacs on center
+ec () { emacs "$*" -g 100x60+600+0 & }
+
+# alias er='e'
+#complete -f -X "!*.Rnw" er
 #complete -G "*.tex" e
 
 # Shortcuts for editing profile
