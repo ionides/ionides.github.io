@@ -78,6 +78,8 @@ alias d531='cl ~/"$ddx"/531'
 alias d810='cl ~/"$ddx"/810'
 alias d700='cl ~/"$ddx"/700'
 alias djr='cl ~/"$ddx"/students/kevin_tan/jrssb'
+alias dci='cl ~/"$ddx"/grant/ci25'
+
 
 # Git repo shortcuts
 alias g='cl ~/git'
@@ -94,6 +96,7 @@ alias gio='cl ~/git/ionides.github.io'
 alias gqu='cl ~/git/quant'
 alias gtu='cl ~/git/tutorials'
 alias gjr='cl ~/git/jrssb_letter'
+alias gci='cl ~/git/ci25'
 
 alias joss='docker run --rm -it  -v $PWD:/data  -u $(id -u):$(id -g)  openjournals/inara  -o pdf,crossref paper.md'
 
