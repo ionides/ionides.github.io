@@ -83,7 +83,8 @@ alias dci='cl ~/"$ddx"/grant/ci25'
 
 # Git repo shortcuts
 alias g='cl ~/git'
-alias g531='cl ~/git/531w25'
+alias g531='cl ~/git/531w26'
+alias p531='cl ~/git/531w26_private'
 alias g810='cl ~/git/810f25'
 alias g700='cl ~/git/700f25'
 alias gst='cl ~/git/students'
