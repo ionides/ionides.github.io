@@ -57,7 +57,9 @@ unset i
 # alias python='/Library/Frameworks/Python.framework/Versions/3.12/bin/python3'
 # alias pip='/Library/Frameworks/Python.framework/Versions/3.12/bin/pip'
 alias py='python'
-
+alias sv='source .venv/bin/activate'
+alias sv531='source ~/git/531w26/.venv/bin/activate'
+alias svpypomp='source ~/git/pypomp/.venv/bin/activate'
 
 # Dropbox shortcuts
 ddx='University of Michigan Dropbox/Edward Ionides'
@@ -98,6 +100,9 @@ alias gqu='cl ~/git/quant'
 alias gtu='cl ~/git/tutorials'
 alias gjr='cl ~/git/jrssb_letter'
 alias gci='cl ~/git/ci25'
+alias gai='cl ~/git/ai'
+alias gef='cl ~/git/efficiency'
+alias pme='cl ~/git/mers_private'
 
 alias joss='docker run --rm -it  -v $PWD:/data  -u $(id -u):$(id -g)  openjournals/inara  -o pdf,crossref paper.md'
 
