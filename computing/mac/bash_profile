@@ -215,6 +215,7 @@ PATH=$(getconf PATH)
 # export PATH="/Library/Frameworks/Python.framework/Versions/3.12/bin:${PATH}"
 
 export PATH=$PATH:/Applications/RStudio.app/Contents/MacOS/pandoc
+export PATH=$PATH:/Applications/RStudio.app/Contents/Resources/app/quarto/bin/tools/x86_64
 
 export PATH=/usr/local/opt/qt/bin:$PATH
 
