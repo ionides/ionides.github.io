@@ -59,6 +59,7 @@ unset i
 alias py='python'
 alias sv='source .venv/bin/activate'
 alias sv531='source ~/git/531w26/.venv/bin/activate'
+alias svquant='source ~/git/quant/.venv/bin/activate'
 alias svpypomp='source ~/git/pypomp/.venv/bin/activate'
 
 # Dropbox shortcuts
