@@ -226,6 +226,10 @@ export PATH=$PATH:/Applications/RStudio.app/Contents/Resources/app/quarto/bin/to
 
 export PATH=/usr/local/opt/qt/bin:$PATH
 
+# this is where claude code wants to put itself
+export PATH=$PATH:~/.local/bin
+
+
 ### adds homebrew locations to the path
 eval "$(/opt/homebrew/bin/brew shellenv)"
 
