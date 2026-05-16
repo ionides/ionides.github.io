@@ -102,9 +102,11 @@ alias gqu='cl ~/git/quant'
 alias gtu='cl ~/git/tutorials'
 alias gjr='cl ~/git/jrssb_letter'
 alias gci='cl ~/git/ci25'
-alias gai='cl ~/git/ai'
+alias pai='cl ~/git/ai_private'
 alias gef='cl ~/git/efficiency'
 alias pme='cl ~/git/mers_private'
+alias pcp='cl ~/git/cp_private'
+
 
 alias joss='docker run --rm -it  -v $PWD:/data  -u $(id -u):$(id -g)  openjournals/inara  -o pdf,crossref paper.md'
 
